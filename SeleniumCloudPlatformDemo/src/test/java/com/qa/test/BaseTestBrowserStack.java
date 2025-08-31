@@ -17,8 +17,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTestBrowserStack {
 	WebDriver driver;
-	public static String USERNAME="kamaldeepkaur_LnlVBk";
-	public static String ACCESS_KEY="vQ9xB29puq77xzh8fKe2";
+	public static String USERNAME="your username";
+	public static String ACCESS_KEY="your key";
 	public static String URL="https://"+USERNAME+":"+ACCESS_KEY+"@hub-cloud.browserstack.com/wd/hub/";
 	
 	@BeforeMethod
