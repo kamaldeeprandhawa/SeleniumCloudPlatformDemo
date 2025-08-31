@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sauce Lab regression suite" thread-count="3" parallel="true" verbose="3">
+  
+  <test name="Sauce Test - chrome">
+  	<parameter name="browser" value="chrome"/>
+  	<parameter name="platformName" value="windows 10"/>
+    <classes>
+      <class name="com.qa.test.SauceTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Sauce Test - ff">
+  	<parameter name="browser" value="firefox"/>
+  	<parameter name="platformName" value="windows 10"/>
+    <classes>
+      <class name="com.qa.test.SauceTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

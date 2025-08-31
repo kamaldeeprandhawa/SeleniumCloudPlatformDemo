@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [BrowserStack Lab regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test parallel="methods" name="BrowserStack Test - Chrome(failed)">
+    <parameter name="os" value="OS X"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="os_version" value="Catalina"/>
+    <parameter name="version" value="85.0"/>
+    <classes>
+      <class name="com.qa.test.SauceTest">
+        <methods>
+          <include name="testInventoryItem"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="testAddToCart"/>
+        </methods>
+      </class> <!-- com.qa.test.SauceTest -->
+    </classes>
+  </test> <!-- BrowserStack Test - Chrome(failed) -->
+  <test parallel="methods" name="BrowserStack Test - ff(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="version" value="80.0"/>
+    <classes>
+      <class name="com.qa.test.SauceTest">
+        <methods>
+          <include name="testInventoryItem"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="testAddToCart"/>
+        </methods>
+      </class> <!-- com.qa.test.SauceTest -->
+    </classes>
+  </test> <!-- BrowserStack Test - ff(failed) -->
+</suite> <!-- Failed suite [BrowserStack Lab regression suite] -->
